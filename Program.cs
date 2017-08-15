@@ -37,7 +37,7 @@ namespace DivideGroups
                 else
                 {
                     Console.Write("Önskas en könsfördelad lista (y/n): ");
-                    if (Console.ReadLine().ToUpper().Equals("y"))
+                    if (Console.ReadLine().ToLower().Equals("y"))
                     {
                         Console.Write("Ange alla personer inklusive kön (ex Lisa k, Kalle m,): ");
                         tempList = Console.ReadLine().Split(',').ToList();
