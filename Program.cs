@@ -68,8 +68,8 @@ namespace DivideGroups
             return listOfPersons;
         }
     
-
-        private static Gender ParseGender(string person)
+        //TODO: Gender som enum utan Parsemetod.
+        private static Gender ParseGender(string person)//Tilldelar kön för medlemmarna, om input matchar k eller m.
         {
             string[] a = person.Trim().Split(' ');
 
@@ -86,7 +86,7 @@ namespace DivideGroups
                 return Gender.Unknown;
         }
 
-        private static void PrintGroups(List<Group> sortedGroups)
+        private static void PrintGroups(List<Group> sortedGroups)//Skriver ut namnen i grupperna med färg beroende på kön
         {
             foreach (var group in sortedGroups)
             {
