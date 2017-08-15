@@ -20,7 +20,7 @@ namespace DivideGroups
         }
 
 
-        private static List<Person> AskForNames()
+        private static List<Person> AskForNames()//Frågar efter om namn vill läsas från fil, annars tar metoden namn som inmatning från consollen
         {
             bool controll = true;
             List<Person> listOfPersons = new List<Person>();
@@ -29,8 +29,8 @@ namespace DivideGroups
             do
             {
                 List<string> tempList = new List<string>();
-                controll = true;
-                if (response == "y")
+                controll = true; // denna variabeln var redan true innan
+                if (response == "y")//om man svarar yes tolkas det som no vilket är default
                 {
                     tempList = File.ReadAllText("nameList.txt").Split(',').ToList();
                 }
