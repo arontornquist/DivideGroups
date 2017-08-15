@@ -30,8 +30,7 @@ namespace DivideGroups
             {
                 List<string> tempList = new List<string>();
                 //TODO lägg till att endast y och n är giltliga inmatningar
-                controll = true; // denna variabeln var redan true innan
-                if (response == "y")//om man svarar yes tolkas det som no vilket är default
+                if (response == "y" || response == "yes")
                 {
                     tempList = File.ReadAllText("nameList.txt").Split(',').ToList();
                 }
@@ -71,7 +70,7 @@ namespace DivideGroups
     
         
         private static Gender ParseGender(string person)//Tilldelar kön för medlemmarna, om input matchar k eller m...
-        // TODO: att listan ska bli könsfördelad.
+        // TODO: att listan ska bli könsfördelad. ?? Hur menar ni då? Det är den ju redan?!?!?!?!?!?!??!?!?!?!??!!+ :)
         {
             string[] a = person.Trim().Split(' ');
 
