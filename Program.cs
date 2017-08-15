@@ -69,8 +69,9 @@ namespace DivideGroups
             return listOfPersons;
         }
     
-        //TODO: Gender som enum utan Parsemetod.
-        private static Gender ParseGender(string person)//Tilldelar kön för medlemmarna, om input matchar k eller m.
+        
+        private static Gender ParseGender(string person)//Tilldelar kön för medlemmarna, om input matchar k eller m...
+        // TODO: att listan ska bli könsfördelad.
         {
             string[] a = person.Trim().Split(' ');
 
